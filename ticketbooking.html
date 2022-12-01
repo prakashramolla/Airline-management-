@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>booking</title>
+	<!-- CSS only -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<!-- -----------------jquery cdn link----------------- -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- ------------------------google fonts---------------------- -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+<!-- ----------------------fonts/icons---------------------- -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- -----------------------style for document--------------- -->
+<style type="text/css">
+.navbar{
+background-color: rgb(240, 248, 255);}
+	
+.navbar-brand{
+margin-left: 100px;}
+.navbar-nav{
+margin-left: 1000px;}
+.nav-item{
+margin-left: 20px;}
+.nav-link{
+color: rgb(0, 68, 128);}
+
+.navbar-brand{
+color: rgb(0, 68, 128);
+}
+.navbar .navbar-expand-sm{
+position: fixed;}
+
+.form{
+text-align: center;
+align-items: center;
+align-content: center;
+margin-top: 100px;}
+
+.places{
+margin-left: 100px;
+margin-top: 100px;}
+.content{
+width: 450px;
+text-align: center;
+align-content: center;
+align-items: center;}
+h2{
+color: purple;}
+                   
+h3{
+color: purple;}
+#adults{
+width: 60px;}
+#children{
+width: 60px;}
+.fa .fa-search{
+background-color: skyblue;}
+
+</style>
+
+</head>
+<body>
+	<!-- ------------------navbar---------------------- -->
+	<nav class="navbar navbar-expand-sm  ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><b>Airline Management system</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ticket Booking</a>
+        </li>
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Login</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="customerlog.html">Customer</a></li>
+            <li><a class="dropdown-item" href="adminlog.html">Admin</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ----------------------ticket booking------------ -->
+
+<form id="form" class="form" name="form" action="flights.php" method="post">
+	<h2> Welcome! Find a flexible flight for your next trip.</h2><br><br>
+	<input type="text" name="source" id="source" placeholder="From">
+	<i class="fa-solid fa-right-left"></i>
+	<input type="text" name="destination" id="destination" placeholder="To">
+	<input type="date" name="date" id="date" placeholder="date">
+	<input type="number" name="adults" id="adults" placeholder="adults">
+	<input type="number" name="children" id="children" placeholder="children">
+	<button name="submit" class="btn"><i class="fa fa-search"></i></button>
+</form>
+
+<!-- -------------------cards------------------------ -->
+
+<div class="places">
+  <div class="row">
+    <div class="col-md">
+      <img src="goa.jpg" width="450px">
+      <div class="content">
+      <h3>Goa</h3><br>
+      <p>Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.</p>
+     
+     <a class="btn btn-primary" href="https://goa-tourism.com/" role="button">Know more</a>
+    </div>
+
+    </div>
+    <div class="col-md">
+       <img src="machu.jpg" width="450px">
+       <div class="content">
+       <h3>Southern peru</h3><br>
+       <P> Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it’s renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery. </P>
+      <a class="btn btn-primary" href="https://whc.unesco.org/en/list/274/" role="button">Know more</a>
+   </div>
+
+    </div>
+    <div class="col-md">
+      <img src="waterfall.webp" width="450px">
+      <div class="content">
+
+      <h3>Newyork</h3>
+      <br>
+      <p>Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States. The largest of the three is Horseshoe Falls, which straddles the international border of the two countries. </p>
+      <a class="btn btn-primary" href="https://www.britannica.com/place/Niagara-Falls-waterfall-North-America" role="button">Know more</a>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------anothercards------------ -->
+<div class="places">
+  <div class="row">
+    <div class="col-md">
+      <img src="maldives.jpg" width="450px">
+      <div class="content">
+      <h3>Mldives</h3><br>
+      <p>Maldives, officially the Republic of Maldives, is an archipelagic country located in Southern Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland.</p>
+     
+     <a class="btn btn-primary" href="https://domestictourpackages.in/TheTravelius/MaldivesTourPackages.html" role="button">Know more</a>
+    </div>
+
+    </div>
+    <div class="col-md">
+       <img src="paris.jpg" width="450px">
+       <div class="content">
+       <h3>Paris</h3><br>
+       <P> Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. </P>
+      <a class="btn btn-primary" href="https://en.parisinfo.com/" role="button">Know more</a>
+   </div>
+
+    </div>
+    <div class="col-md">
+      <img src="tajmahal.jpg" width="450px">
+      <div class="content">
+
+      <h3>Delhi</h3><br>
+      <p>The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal</p>
+      <a class="btn btn-primary" href="https://whc.unesco.org/en/list/252/" role="button">Know more</a>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

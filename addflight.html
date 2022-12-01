@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Customerlog</title>
+	<!-- CSS only -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<!-- -----------------jquery cdn link----------------- -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- ------------------------google fonts---------------------- -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+<style type="text/css">
+	.register{
+	       margin: 200px;
+	   }
+	h3{
+		color: purple;}
+
+</style>
+
+
+</head>
+<body>
+
+	<div class="register">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="31202.jpg" width="600px" height="600px">
+
+			</div>
+
+			<div class="col-md-6">
+				<h3>Add Flight Details</h3>
+				
+				<form id="form" name="prakash" onsubmit="return validateForm()" action="addflight.php" method="post">
+					 <div class="mb-3 mt-3">
+                          <label for="flightname" class="form-label">Flight Name:</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter Flight name" name="fname">
+                       </div>
+
+                      <div class="mb-3 mt-3">
+                           <label for="source" class="form-label">Source:</label>
+                            <input type="text" class="form-control" id="source" placeholder="Enter source" name="source">
+                       </div>
+                        <div class="mb-3 mt-3">
+                           <label for="destination" class="form-label">Destination:</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Enter Destination" name="destination">
+                       </div>
+                     <div class="mb-3">
+                           <label for="price" class="form-label">Price:</label>
+                           <input type="text" class="form-control" id="price" placeholder="Enter price" name="price">
+                      </div>
+
+                      <label>Total seats</label><br>
+                      
+                      <input type="checkbox" name="chkl[]" value="A1">A1 
+                      <input type="checkbox" name="chkl[]" value="A2">A2
+                      <input type="checkbox" name="chkl[]" value="A3">A3
+                      <input type="checkbox" name="chkl[]" value="A4">A4  
+                      <input type="checkbox" name="chkl[]" value="A5">A5
+                      <input type="checkbox" name="chkl[]" value="A6">A6 
+                      <input type="checkbox" name="chkl[]" value="A7">A7 
+                      <input type="checkbox" name="chkl[]" value="A8">A8
+                      <input type="checkbox" name="chkl[]" value="A9">A9 
+                      <input type="checkbox" name="chkl[]" value="A10">A10<br>
+                      <input type="checkbox" name="chkl[]" value="B1">B1 
+                      <input type="checkbox" name="chkl[]" value="B2">B2 
+                      <input type="checkbox" name="chkl[]" value="B3">B3  
+                      <input type="checkbox" name="chkl[]" value="B4">B4 
+                      <input type="checkbox" name="chkl[]" value="B5">B5
+                      <input type="checkbox" name="chkl[]" value="B6">B6 
+                      <input type="checkbox" name="chkl[]" value="B7">B7
+                      <input type="checkbox" name="chkl[]" value="B8">B8
+                      <input type="checkbox" name="chkl[]" value="B9">B9 
+                      <input type="checkbox" name="chkl[]" value="B10">B10<br>
+                      <input type="checkbox" name="chkl[]" value="C1">C1 
+                      <input type="checkbox" name="chkl[]" value="C2">C2 
+                      <input type="checkbox" name="chkl[]" value="C3">C3 
+                      <input type="checkbox" name="chkl[]" value="C4">C4  
+                      <input type="checkbox" name="chkl[]" value="C5">C5
+                      <input type="checkbox" name="chkl[]" value="C6">C6  
+                      <input type="checkbox" name="chkl[]" value="C7">C7 
+                      <input type="checkbox" name="chkl[]" value="C8">C8  
+                      <input type="checkbox" name="chkl[]" value="C9">C9  
+                      <input type="checkbox" name="chkl[]" value="C10">C10<br>    
+                            
+                  <input type="submit" name="submit" id="submit" class="btn btn-primary">
+               </form>
+
+			</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+function validateForm() {
+  let a = document.forms["prakash"]["fname"].value;
+  if (a == "") {
+    alert("Flight Name must be filled out");
+    return false;
+  }
+  let  b= document.forms["prakash"]["source"].value;
+  if (b == "") {
+    alert("source must be filled out");
+    return false;
+  }
+  let c = document.forms["prakash"]["destination"].value;
+  if (c == "") {
+    alert("Destination must be filled out");
+    return false;
+  }
+  let x = document.forms["prakash"]["price"].value;
+  if (x == "") {
+    alert("price must be filled out");
+    return false;
+  }
+}
+  </script>
+
+</body>
+</html>
