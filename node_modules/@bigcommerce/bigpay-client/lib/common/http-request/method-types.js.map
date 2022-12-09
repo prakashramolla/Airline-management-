@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/common/http-request/method-types.js"],"names":["GET","POST","DELETE"],"mappings":";;;;;;AAAO,IAAMA,GAAG,GAAG,KAAZ;;AACA,IAAMC,IAAI,GAAG,MAAb;;AACA,IAAMC,MAAM,GAAG,QAAf","sourcesContent":["export const GET = 'GET';\nexport const POST = 'POST';\nexport const DELETE = 'DELETE';\n"],"file":"method-types.js"}
