@@ -1,0 +1,15 @@
+<h2 class="page-heading">{{lang 'category.top' }}</h2>
+
+{{#each categories}}
+<div class="top-products">
+<li class="navPage-subMenu-item">
+    <a href="{{url}}" class="category-image"><img class="top" src="{{getImage image 'category_card_size'}}" height="300px" alt="{{name}}"></a>
+    <a class="navPage-subMenu-action navPages-action"
+       href="{{url}}"
+       aria-label="{{name}}"
+    >
+        {{name}}
+    </a>
+</li>
+</div>
+{{/each}}
